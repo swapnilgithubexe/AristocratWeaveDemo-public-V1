@@ -1,0 +1,306 @@
+.ProductDetails {
+  background-color: wheat;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  padding: 6vmax;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.ProductDetails > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2vmax;
+  box-sizing: border-box;
+}
+
+.ProductDetails > div:last-child {
+  align-items: flex-start;
+}
+
+.CarouselImage {
+  width: 50%;
+  height: auto;
+  border-radius: 5%;
+  margin-left: 30%;
+}
+
+.detailsBlock-1 > h2 {
+  color: #b38b53;
+  font: 600 1.8vmax "Encode Sans";
+}
+
+.detailsBlock-1 > p {
+  color: #4f2e01;
+  font: 200 1vmax "Encode Sans";
+}
+
+.detailsBlock-2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-top: 1px solid #b38b53;
+  border-bottom: 1px solid #b38b53;
+  width: 70%;
+  padding: 1vmax 0;
+}
+
+.detailsBlock-2-span {
+  font: 200 0.8vmax "Encode Sans";
+  color: #b38b53;
+}
+
+.detailsBlock-3 {
+  width: 70%;
+}
+
+.detailsBlock-3 > h1 {
+  color: #b38b53;
+  font: 400 1.8vmax "Encode Sans";
+  margin: 1vmax 0;
+}
+.detailsBlock-3-1 {
+  display: flex;
+  align-items: center;
+}
+
+.detailsBlock-3-1-1 > button {
+  border: none;
+  width: 2.1vmax;
+  height: 2.3vmax;
+  margin-right: 2px;
+  border-radius: 5px;
+  background-color: #b38b53;
+  padding: 0.5vmax;
+  cursor: pointer;
+  color: #4f2e01;
+  transition: all 0.5s;
+}
+.detailsBlock-3-1-1 > button:hover {
+  background-color: #4f2e01;
+  color: #b38b53;
+}
+
+.detailsBlock-3-1-1 > input[type="number"][readOnly] {
+  border: 1px solid #4f2e01;
+  background-color: white;
+  height: 2vmax;
+  margin-right: 2px;
+  width: 2vmax;
+  text-align: center;
+  outline: none;
+  font: 400 0.9vmax "Encode Sans";
+  color: #4f2e01;
+  border-radius: 5px;
+}
+.redColor {
+  color: #ff0000;
+}
+
+.greenColor {
+  color: #059305;
+}
+
+.detailsBlock-3-1 > button:last-child {
+  border: none;
+  cursor: pointer;
+  color: #4f2e01;
+  transition: all 0.5s;
+  background-color: #b38b53;
+  font: 500 1vmax "Encode Sans";
+  border-radius: 20px;
+  padding: 0.5vmax 2vmax;
+  margin: 1vmax;
+  outline: none;
+}
+
+.detailsBlock-3-1 > button:last-child:hover {
+  background-color: #4f2e01;
+  color: #b38b53;
+}
+
+.detailsBlock-3 > p {
+  border-top: 1px solid #4f2e01;
+  border-bottom: 1px solid #4f2e01;
+  padding: 1vmax 0;
+  color: #b38b53;
+  font: 400 1vmax "Encode Sans";
+  margin: 1vmax 0;
+}
+
+.detailsBlock-4 {
+  color: #b38b53;
+  font: 500 1.2vmax sans-serif;
+}
+
+.detailsBlock-4 > p {
+  color: #b38b53;
+  font: 300 0.8vmax sans-serif;
+}
+
+.submitReview {
+  border: none;
+  background-color: #b38b53;
+  font: 500 1vmax "Encode Sans";
+  border-radius: 20px;
+  padding: 0.6vmax 2vmax;
+  margin: 1vmax 0;
+  color: #4f2e01;
+  cursor: pointer;
+  transition: all 0.5s;
+  outline: none;
+}
+.submitReview:hover {
+  background-color: #4f2e01;
+  color: #b38b53;
+}
+
+.submitDialog {
+  display: flex;
+  flex-direction: column;
+}
+.submitDialogTextArea {
+  border: 1px solid rgba(0, 0, 0, 0.082);
+  margin: 1vmax 0;
+  outline: none;
+  padding: 1rem;
+  font: 300 1rem "Encode Sans";
+}
+
+.reviewsHeading {
+  color: #4f2e01;
+  font: 400 1.4vmax "Encode Sans";
+  text-align: center;
+  border-bottom: 1px solid #4f2e01;
+  padding: 1vmax;
+  width: 20vmax;
+  margin: auto;
+  margin-bottom: 4vmax;
+}
+.reviews {
+  display: flex;
+  overflow: auto;
+}
+
+.reviewCard {
+  flex: none;
+  border: 1px solid #b38b53;
+  width: 30vmax;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1vmax;
+  padding: 3vmax;
+  transition: all 0.5s;
+}
+.reviewCard:hover {
+  box-shadow: 0 0 5px #4f2e01;
+  transform: translateY(-1vmax);
+}
+.reviewCard > img {
+  width: 5vmax;
+}
+.reviewCard > p {
+  color: #4f2e01;
+  font: 600 0.9vmax "Encode Sans";
+}
+.reviewCardComment {
+  color: #4f2e01;
+  font: 300 0.8vmax "Encode Sans";
+}
+
+.noReviews {
+  font: 400 1.3vmax "Gill Sans";
+  text-align: center;
+  color: #4f2e01;
+}
+
+@media screen and (max-width: 600px) {
+  .ProductDetails {
+    flex-direction: column;
+    height: unset;
+  }
+
+  .ProductDetails > div:last-child {
+    align-items: center;
+  }
+
+  .detailsBlock-1 > h2 {
+    font-size: 3vmax;
+    text-align: center;
+  }
+
+  .detailsBlock-1 > p {
+    text-align: center;
+    font-size: 2vmax;
+  }
+
+  .detailsBlock-2 {
+    justify-content: center;
+  }
+  .detailsBlock-2 > span {
+    font-size: 2.5vmax;
+  }
+
+  .detailsBlock-3 > h1 {
+    font: 500 3vmax "Encode Sans";
+    text-align: center;
+  }
+
+  .detailsBlock-3-1 {
+    flex-direction: column;
+  }
+
+  .detailsBlock-3-1-1 {
+    padding: 2vmax 0;
+  }
+  .detailsBlock-3-1-1 > button {
+    padding: 2.5vmax;
+    width: 4vmax;
+  }
+
+  .detailsBlock-3-1-1 > input {
+    padding: 1.5vmax;
+    width: 3vmax;
+    font: 400 2vmax "Encode Sans";
+  }
+
+  .detailsBlock-3-1 > button:last-child {
+    font: 500 1.7vmax "Encode Sans";
+    padding: 1.5vmax;
+    width: 20vmax;
+    margin: 3vmax 0;
+  }
+
+  .detailsBlock-3 > p {
+    padding: 2.5vmax 0;
+    text-align: center;
+    font: 400 2vmax "Encode Sans";
+  }
+
+  .detailsBlock-4 {
+    font: 500 2.5vmax sans-serif;
+  }
+
+  .detailsBlock-4 > p {
+    font: 300 1.8vmax sans-serif;
+  }
+
+  .submitReview {
+    font: 500 1.7vmax "Encode Sans";
+    padding: 1.5vmax;
+    width: 20vmax;
+    margin: 3vmax 0;
+  }
+
+  .reviewCard > p {
+    font: 600 3vw "Encode Sans";
+  }
+  .reviewCardComment {
+    font: 300 5vw cursive;
+  }
+}

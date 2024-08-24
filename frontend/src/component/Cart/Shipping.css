@@ -1,0 +1,140 @@
+.shippingContainer {
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.shippingContainer::before {
+  content: "";
+  background-image: url(../../images/shipping.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: blur(1px);
+}
+
+.shippingBox {
+  background-color: rgba(86, 112, 142, 0.541);
+  margin-top: 1.7%;
+  width: 25vw;
+  height: 80vh;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.shippingHeading {
+  text-align: center;
+  color: whitesmoke;
+  font: 400 1.3vmax "Encode sans";
+  padding: 1.3vmax;
+  border-bottom: 1px solid whitesmoke;
+  width: 50%;
+  margin: auto;
+}
+
+.shippingForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 2vmax;
+  justify-content: space-evenly;
+  height: 80%;
+  transition: all 0.5s;
+}
+
+.shippingForm > div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: auto;
+}
+
+.shippingForm > div > input,
+.shippingForm > div > select {
+  padding: 1vmax 4vmax;
+  padding-right: 1vmax;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid skyblue;
+  border-radius: 4px;
+  font: 500 1vmax "Encode sans";
+  outline: none;
+}
+
+.shippingForm > div > svg {
+  position: absolute;
+  transform: translateX(1vmax);
+  font-size: 1.6vmax;
+  color: rgb(0, 0, 66);
+}
+
+.shippingBtn {
+  border: none;
+  background-color: rgb(0, 0, 66);
+  color: white;
+  border-radius: 10px;
+  font: 300 1vmax "Encode sans";
+  width: 100%;
+  padding: 1vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+  box-shadow: 0 2px 5px skyblue;
+  outline: none;
+  margin: 2vmax;
+}
+
+.shippingBtn:hover {
+  background-color: rgb(2, 2, 130);
+}
+select {
+  padding: 10px;
+  border: 1px solid skyblue;
+  border-radius: 4px;
+  background-color: #9de4f9;
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(0, 0, 66);
+  appearance: none;
+}
+
+@media screen and (max-width: 600px) {
+  .shippingBox {
+    width: 100vw;
+    height: 95vh;
+    background-color: rgba(86, 112, 142, 0.541);
+  }
+
+  .shippingHeading {
+    font: 400 6vw "Encode sans";
+    padding: 5vw;
+  }
+
+  .shippingForm {
+    padding: 11vw;
+  }
+
+  .shippingForm > div > input,
+  .shippingForm > div > select {
+    padding: 5vw 10vw;
+    font: 300 4vw "Encode sans";
+  }
+
+  .shippingForm > div > svg {
+    font-size: 6vw;
+    transform: translateX(3vw);
+  }
+
+  .shippingBtn {
+    font: 300 4vw "Encode sans";
+    padding: 4vw;
+  }
+}

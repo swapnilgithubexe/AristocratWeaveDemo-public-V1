@@ -1,0 +1,139 @@
+.productsHeading {
+  margin: 2vmax auto;
+  width: 15vw;
+  border-bottom: 1px solid #6c3f01;
+  padding: 2vmax;
+  color: #945701;
+  font: 500 1.5vmax "Encode sans";
+  text-align: center;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5vmax;
+  justify-content: center;
+  min-height: 55vh;
+}
+
+.paginationBox {
+  display: flex;
+  justify-content: center;
+  margin: 6vmax;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.filterBox {
+  width: 10vmax;
+  position: absolute;
+  top: 10vmax;
+  left: 4vmax;
+}
+
+.categoryBox {
+  padding: 0%;
+  position: relative;
+}
+
+.category-link {
+  list-style: none;
+  color: #945701;
+  font: 400 0.9vmax "Encode sans";
+  margin: 0.4vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.category-link:hover {
+  color: #6c3f01;
+}
+
+.filterBox > fieldset {
+  border: 1px solid #b38b53;
+}
+
+.paginationBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.MuiPagination-root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.MuiPagination-ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.MuiPaginationItem-root {
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.MuiPaginationItem-previousNext {
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.MuiPaginationItem-page {
+  background-color: wheat !important;
+  color: #6c3f01 !important;
+}
+
+.MuiPaginationItem-page.Mui-selected {
+  background-color: goldenrod !important;
+  color: #fff;
+}
+
+.MuiPaginationItem-page:hover {
+  background-color: rgb(245, 209, 143) !important;
+}
+
+.MuiPaginationItem-previousNext:hover {
+  background-color: wheat !important;
+}
+.MuiTypography-root,
+.MuiTypography-body1,
+.css-ahj2mt-MuiTypography-root {
+  color: #6c3f01;
+}
+
+@media screen and (max-width: 600px) {
+  .filterBox {
+    width: 20vmax;
+    position: static;
+    margin: auto;
+  }
+
+  .page-link {
+    font: 300 1.7vmax "Encode sans";
+  }
+  .category-link {
+    font: 400 1.8vmax "Encode sans";
+  }
+}

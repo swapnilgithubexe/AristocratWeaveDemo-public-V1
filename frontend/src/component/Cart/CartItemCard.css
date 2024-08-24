@@ -1,0 +1,65 @@
+.CartItemCard {
+  display: flex;
+  padding: 1vmax;
+  height: 8vmax;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+.CartItemCard > img {
+  width: 5vmax;
+}
+
+.CartItemCard > div {
+  display: flex;
+  margin: 0.3vmax 1vmax;
+  flex-direction: column;
+}
+
+.CartItemCard > div > a {
+  font: 300 0.9vmax "Encode sans";
+  color: whitesmoke;
+  text-decoration: none;
+  margin-bottom: 2px;
+}
+
+.CartItemCard > div > span {
+  font: 300 0.9vmax "Encode sans";
+  color: whitesmoke;
+}
+
+.CartItemCard > div > p {
+  background-color: whitesmoke;
+  color: red;
+  margin-top: 5px;
+  border-radius: 5px;
+  padding: 2px;
+  text-align: center;
+  font: 300 0.8vmax "Encode sans";
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .CartItemCard {
+    padding: 3vmax;
+    height: 25vmax;
+  }
+  .CartItemCard > img {
+    width: 10vmax;
+  }
+
+  .CartItemCard > div {
+    margin: 1vmax 2vmax;
+  }
+
+  .CartItemCard > div > a {
+    font: 300 2vmax "Encode sans";
+  }
+
+  .CartItemCard > div > span {
+    font: 300 1.9vmax "Encode sans";
+  }
+
+  .CartItemCard > div > p {
+    font: 100 1.8vmax "Encode sans";
+  }
+}

@@ -1,0 +1,103 @@
+.paymentContainer {
+  display: grid;
+  place-items: center;
+  height: 65vh;
+  margin: 2vmax;
+}
+.paymentContainer::before {
+  content: "";
+  background-image: url("../../images/payment.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.paymentForm {
+  width: 22%;
+  height: 100%;
+}
+
+.paymentForm > p {
+  font: 400 2vmax "Encode sans";
+  color: whitesmoke;
+  border-bottom: 1px solid whitesmoke;
+  padding: 1vmax 0;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+.paymentForm > div {
+  display: flex;
+  align-items: center;
+  margin: 2vmax 0;
+}
+
+.paymentInput {
+  padding: 1vmax 4vmax;
+  padding-right: 1vmax;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid whitesmoke;
+  border-radius: 4px;
+  outline: none;
+}
+
+.paymentForm > div > svg {
+  position: absolute;
+  transform: translateX(1vmax);
+  font-size: 1.6vmax;
+  color: whitesmoke;
+}
+
+.paymentFormBtn {
+  border: none;
+  background-color: whitesmoke;
+  color: black;
+  font: 400 1vmax "Encode sans";
+  width: 100%;
+  padding: 0.8vmax;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+  outline: none;
+}
+
+.paymentFormBtn:hover {
+  background-color: rgba(245, 245, 245, 0.717);
+}
+
+@media screen and (max-width: 600px) {
+  .paymentForm {
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.461);
+  }
+
+  .paymentForm > p {
+    font: 400 8vw "Encode sans";
+    padding: 4vw 0;
+    width: 60%;
+  }
+
+  .paymentForm > div {
+    margin: 10vw 0;
+  }
+
+  .paymentInput {
+    padding: 4vw 10vw;
+  }
+
+  .paymentForm > div > svg {
+    font-size: 6vw;
+  }
+
+  .paymentFormBtn {
+    font: 300 4vw "Encode sans";
+    padding: 4vw;
+  }
+}

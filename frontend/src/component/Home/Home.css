@@ -1,0 +1,143 @@
+.banner {
+  background-image: linear-gradient(to right, #b38b53, #f9c05d),
+    linear-gradient(to left, green, blue);
+
+  background-blend-mode: screen;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vmin;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  width: 100%;
+}
+
+.banner h1 {
+  text-shadow: 3px 1px 3px rgb(247, 183, 65);
+  font: 400 5vmax "Libre Baskerville";
+}
+
+.banner > p {
+  font: 300 1.7vmax "Dancing Script";
+}
+
+.banner > a > button {
+  margin-bottom: 5vmax;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 100%;
+  padding: 1vmax;
+  color: #ffffff;
+  transition: all 0.5s;
+  height: 3vmax;
+  width: 3vmax;
+  font: 500 1vmax "Encode Sans";
+}
+.banner > a > button:hover {
+  background-color: wheat;
+  color: #b38b53;
+}
+
+.banner::after {
+  content: "";
+  width: 100vw;
+  height: 100vmin;
+  background-color: rgba(191, 202, 247, 0.726);
+  position: absolute;
+  top: 0%;
+  left: 0;
+  clip-path: polygon(100% 100%, 100% 0, 90% 84%, 0% 100%);
+  max-width: 100%;
+}
+
+.homeHeading {
+  text-align: center;
+  font: 300 1.4vmax "Encode Sans";
+  border-bottom: 1px solid rgba(71, 32, 1, 0.5);
+  width: 20vmax;
+  padding: 1vmax;
+  margin: 5vmax auto;
+  color: #b38b53;
+}
+
+.container {
+  display: flex;
+  margin: 2vmax auto;
+  width: 80vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.productCard {
+  width: 14vmax;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #8a6532;
+  margin: 2vmax;
+  transition: all 0.5s;
+  padding-bottom: 0.5vmax;
+}
+
+.productCard > img {
+  width: 14vmax;
+}
+
+.productCard > div {
+  margin: 0.5vmax;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.productCardSpan {
+  margin: 0.5vmax;
+  font: 300 0.7vmax "Encode Sans";
+}
+
+.productCard > p {
+  font-family: "Encode Sans";
+  font-size: 1.2vmax;
+  margin: 1vmax 0.5vmax;
+  margin-bottom: 0;
+}
+
+.productCard > span {
+  margin: 0.5vmax;
+  color: #8a6532;
+  font-family: "Encode Sans";
+  font-size: 1vmax;
+}
+
+.productCard:hover {
+  box-shadow: 0 0 5px rgba(67, 47, 1, 0.47);
+
+  transform: translateY(-1vmax);
+}
+
+@media screen and (max-width: 600px) {
+  .productCard > p {
+    font-size: 1.7vmax;
+  }
+
+  .productCard > div {
+    margin: 0vmax;
+    display: block;
+  }
+
+  .productCard > span {
+    font-size: 1.5vmax;
+  }
+
+  .productCard > div > span {
+    margin: 0 0.5vmax;
+    font: 300 1vmax "Encode Sans";
+  }
+}

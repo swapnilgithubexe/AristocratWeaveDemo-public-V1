@@ -1,0 +1,204 @@
+.emptyCart {
+  margin: auto;
+  text-align: center;
+  padding: 10vmax;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.emptyCart > svg {
+  font-size: 5vmax;
+  color: #5b3c10;
+  margin-bottom: 5px;
+}
+.emptyCart > p {
+  font: 400 2vmax "Encode sans";
+  margin-bottom: 10px;
+}
+.emptyCart > a {
+  background-color: rgb(242, 205, 137);
+  color: #5b3c10;
+  border: none;
+  padding: 1vmax 3vmax;
+  cursor: pointer;
+  font: 400 1vmax "Encode sans";
+  text-decoration: none;
+  border-radius: 20px;
+  transition: all 0.5s;
+}
+.emptyCart > a:hover {
+  background-color: rgb(253, 191, 76);
+}
+
+.cartPage {
+  padding: 5vmax;
+  height: 80vh;
+}
+.cartPage::before {
+  content: "";
+  background-image: url("../../images/cart.jpg");
+  background-repeat: no-repeat;
+  filter: blur(3px);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.cartHeader {
+  background-color: whitesmoke;
+  width: 90%;
+  box-sizing: border-box;
+  margin: auto;
+  color: rgb(2, 103, 65);
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr;
+  font: 300 0.9vmax "Encode sans";
+  border-radius: 12px;
+}
+.cartHeader > p {
+  margin: 10px;
+}
+.cartHeader > p:last-child {
+  text-align: end;
+}
+
+.cartContainer {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr;
+}
+
+.cartInput {
+  display: flex;
+  align-items: center;
+  height: 8vmax;
+}
+
+.cartInput > button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.616);
+  padding: 0.5vmax;
+  cursor: pointer;
+  color: whitesmoke;
+  transition: all 0.5s;
+}
+.cartInput > button:hover {
+  background-color: rgba(0, 0, 0, 0.767);
+}
+
+.cartInput > input {
+  border: none;
+  height: 2vmax;
+  width: 2vmax;
+  text-align: center;
+  outline: none;
+  font: 500 0.9vmax "Encode sans";
+  color: black;
+}
+
+.cartSubtotal {
+  display: flex;
+  padding: 0.5vmax;
+  height: 8vmax;
+  align-items: center;
+  box-sizing: border-box;
+  font: 300 1vmax "Encode sans";
+  justify-content: flex-end;
+  color: whitesmoke;
+}
+
+.cartGrossProfit {
+  display: grid;
+  grid-template-columns: 2fr 1.2fr;
+}
+
+.cartGrossProfitBox {
+  border-top: 3px solid whitesmoke;
+  margin: 1vmax 4vmax;
+  box-sizing: border-box;
+  padding: 2vmax 0;
+  font: 300 1vmax "Encode sans";
+  display: flex;
+  justify-content: space-between;
+}
+.cartGrossProfitBox p {
+  color: whitesmoke;
+}
+.checkOutBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+.checkOutBtn > button {
+  background-color: whitesmoke;
+  color: rgb(2, 83, 45);
+  border: none;
+  padding: 0.8vmax 4vmax;
+  width: 50%;
+  font: 300 0.9vmax "Encode sans";
+  margin: 1vmax 4vmax;
+  cursor: pointer;
+  border-radius: 30px;
+  box-shadow: 0 3px 5px teal;
+}
+
+@media screen and (max-width: 600px) {
+  .cartPage {
+    padding: 0;
+    min-height: 60vh;
+    background-color: teal;
+  }
+
+  .cartHeader {
+    width: 100%;
+    font: 300 1.7vmax "Encode sans";
+    grid-template-columns: 3fr 1fr 1fr;
+  }
+
+  .cartContainer {
+    width: 100%;
+    grid-template-columns: 3fr 1fr 1fr;
+  }
+
+  .cartInput {
+    height: 20vmax;
+  }
+
+  .cartInput > button {
+    padding: 1.5vmax;
+  }
+
+  .cartInput > input {
+    width: 2vmax;
+    padding: 1.5vmax;
+    font: 400 1.8vmax "Encode sans";
+  }
+
+  .cartSubtotal {
+    padding: 1.5vmax;
+    height: 20vmax;
+    font: 300 2vmax "Encode sans";
+  }
+
+  .cartGrossProfit {
+    display: grid;
+    grid-template-columns: 0fr 2fr;
+  }
+
+  .cartGrossProfitBox {
+    padding: 2vmax;
+    font: 300 2vmax "Encode sans";
+  }
+
+  .checkOutBtn > button {
+    padding: 2vmax 4vmax;
+    width: 100%;
+    font: 300 2vmax "Encode sans";
+  }
+}

@@ -1,0 +1,71 @@
+footer {
+  margin-top: 10vmax;
+  padding: 2vmax;
+  background-color: rgba(34, 33, 33, 0.854);
+  color: wheat;
+  display: flex;
+  align-items: center;
+}
+
+.leftFooter {
+  width: 20%;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+.leftFooter > p {
+  text-align: center;
+  font-size: 1.2vmax;
+  font-family: "Encode Sans";
+}
+.leftFooter > img {
+  width: 10vmax;
+  margin: 1vmax;
+  cursor: pointer;
+}
+
+.midFooter {
+  width: 60%;
+
+  text-align: center;
+}
+
+.midFooter > h1 {
+  margin-left: 10%;
+  font-size: 5vmax;
+  font-weight: 400;
+  font-family: "Libre Baskerville";
+  color: #b38b53;
+  text-shadow: 2px 1px 2.5px wheat;
+}
+.midFooter > p {
+  max-width: 60%;
+  font-family: "Encode sans";
+  margin: 1vmax auto;
+}
+
+.rightFooter {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rightFooter > h4 {
+  font-family: "Encode sans";
+  font-size: 1.4vmax;
+  text-decoration: None;
+}
+.rightFooter > a {
+  text-decoration: none;
+  font-size: 1.3vmax;
+  font-family: "Encode Sans";
+  color: white;
+  transition: all 0.5s;
+  margin: 0.5vmax;
+}
+
+.rightFooter > a:hover {
+  color: #b38b53;
+}
