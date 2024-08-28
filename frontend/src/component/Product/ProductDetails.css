@@ -50,7 +50,7 @@
 }
 
 .detailsBlock-2-span {
-  font: 200 0.8vmax "Encode Sans";
+  font: 200 0.9vmax "Encode Sans";
   color: #b38b53;
 }
 
@@ -208,9 +208,9 @@
   color: #4f2e01;
   font: 600 0.9vmax "Encode Sans";
 }
-.reviewCardComment {
+.reviewCard span {
   color: #4f2e01;
-  font: 300 0.8vmax "Encode Sans";
+  font: 300 1vmax "Encode Sans";
 }
 
 .noReviews {

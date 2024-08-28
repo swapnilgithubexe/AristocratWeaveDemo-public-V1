@@ -1,6 +1,6 @@
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
 import { thunk } from 'redux-thunk';
-import { productDetailsReducer, productsReducer } from './reducers/productReducer';
+import { newReviewReducer, productDetailsReducer, productsReducer } from './reducers/productReducer';
 import { userReducer } from './reducers/userReducer';
 import { forgotPasswordReducer, resetPasswordReducer, updatePasswordReducer } from "./reducers/passwordReducer"
 import { cartReducer } from './reducers/cartReducer';
@@ -21,6 +21,7 @@ const rootReducer = combineReducers({
   myOrders: myOrdersReducer,
   newOrder: newOrderReducer,
   allOrders: allOrdersReducer,
+  newReview: newReviewReducer,
 });
 
 const initialState = {

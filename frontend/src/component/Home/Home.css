@@ -96,17 +96,17 @@
   justify-content: flex-start;
   align-items: center;
 }
-
-.productCardSpan {
-  margin: 0.5vmax;
-  font: 300 0.7vmax "Encode Sans";
+.productCard div span {
+  font: 400 1vmax "Encode sans";
+  color: #8a6532;
 }
 
 .productCard > p {
   font-family: "Encode Sans";
-  font-size: 1.2vmax;
+  font-size: 1.3vmax;
   margin: 1vmax 0.5vmax;
   margin-bottom: 0;
+  letter-spacing: 1.3px;
 }
 
 .productCard > span {
@@ -114,6 +114,7 @@
   color: #8a6532;
   font-family: "Encode Sans";
   font-size: 1vmax;
+  margin-top: 0;
 }
 
 .productCard:hover {
