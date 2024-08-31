@@ -72,7 +72,7 @@ exports.forgotPassword = catchAsyncError(async (req, res, next) => {
   //get password token - req.protocol}://${req.get("host")
   const resetToken = user.getResetPasswordToken();
   await user.save({ validateBeforeSave: false });
-  const resetPasswordUrl = `${process.env.FRONTEND_URL}/password/reset/${resetToken}`
+  const resetPasswordUrl = `${req.protocol}://${req.get("host")}/password/reset/${resetToken}`
 
   const message = `Welcome to AristoCrat Family \n\n
   Your password reset token is :- \n\n ${resetPasswordUrl} \n\n Please ignore if this request wasn't made by you! \n\n Thanks for reaching out to our customer support, Have a great day!`

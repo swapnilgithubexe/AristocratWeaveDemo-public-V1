@@ -30,6 +30,7 @@ import Success from "./component/Cart/orderSuccess.jsx"
 import Loader from "./component/layout/Loader/Loader.jsx";
 import MyOrders from "./component/Orders/MyOrders.jsx"
 import OrderDetails from "./component/Orders/OrderDetails.jsx"
+import Dashboard from "./component/Admin/Dashboard.jsx"
 
 
 function App() {
@@ -111,6 +112,8 @@ function App() {
         <Route path="/me/update" element={<ProtectedRoute element={<UpdateProfile />} />} />
 
         <Route path="/password/update" element={<ProtectedRoute element={<UpdatePassword />} />} />
+
+        <Route path="/admin/dashboard" element={<ProtectedRoute element={<Dashboard />} />} />
 
 
         <Route path="/Search" element={<Search />} />
