@@ -21,17 +21,17 @@ const UserOptions = ({ user }) => {
     { icon: <ExitToAppIcon />, name: "Logout", func: logoutUser },
   ];
 
-  if (user && user.role === "admin") {
-    options.unshift({
-      icon: <DashboardIcon />,
-      name: "Dashboard",
-      func: dashboard,
-    });
-  }
+  // if (user && user.role === "admin") {
+  //   options.unshift({
+  //     icon: <DashboardIcon />,
+  //     name: "Dashboard",
+  //     func: dashboard,
+  //   });
+  // }
 
-  function dashboard() {
-    navigate("/admin/dashboard");
-  }
+  // function dashboard() {
+  //   navigate("/admin/dashboard");
+  // }
 
   function orders() {
     navigate("/orders");
@@ -82,8 +82,8 @@ const UserOptions = ({ user }) => {
   );
 };
 
-UserOptions.defaultProps = {
-  user: {},
-};
+// UserOptions.defaultProps = {
+//   user: {},
+// };
 
 export default UserOptions;
