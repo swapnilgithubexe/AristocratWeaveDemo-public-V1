@@ -1,3 +1,18 @@
+import React, { Fragment, useState } from "react";
+import "./Header.css";
+import { SpeedDial, SpeedDialAction } from "@mui/material";
+import Backdrop from "@mui/material/Backdrop";
+import DashboardIcon from "@mui/icons-material/Dashboard";
+import PersonIcon from "@mui/icons-material/Person";
+import ExitToAppIcon from "@mui/icons-material/ExitToApp";
+import ListAltIcon from "@mui/icons-material/ListAlt";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import Profile from "../../../images/Profile.png";
+import { useNavigate } from "react-router-dom";
+import { useAlert } from "react-alert";
+import { logout } from "../../../action/userAction";
+import { useDispatch, useSelector } from "react-redux";
+
 const UserOptions = ({ user }) => {
   const { cartItems } = useSelector((state) => state.cart);
   const navigate = useNavigate();
@@ -21,17 +36,17 @@ const UserOptions = ({ user }) => {
     { icon: <ExitToAppIcon />, name: "Logout", func: logoutUser },
   ];
 
-  // if (user && user.role === "admin") {
-  //   options.unshift({
-  //     icon: <DashboardIcon />,
-  //     name: "Dashboard",
-  //     func: dashboard,
-  //   });
-  // }
+  if (user.role === "admin") {
+    options.unshift({
+      icon: <DashboardIcon />,
+      name: "Dashboard",
+      func: dashboard,
+    });
+  }
 
-  // function dashboard() {
-  //   navigate("/admin/dashboard");
-  // }
+  function dashboard() {
+    navigate("/admin/dashboard");
+  }
 
   function orders() {
     navigate("/orders");
@@ -81,9 +96,5 @@ const UserOptions = ({ user }) => {
     </Fragment>
   );
 };
-
-// UserOptions.defaultProps = {
-//   user: {},
-// };
 
 export default UserOptions;
