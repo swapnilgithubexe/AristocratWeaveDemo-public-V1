@@ -10,6 +10,30 @@ This project is a full-fledged e-commerce application built using the MERN stack
 2. Products Page
    ![Products Page](Project_Photos/ProductsPage.png)`
 
+3. Profile Page
+   ![Products Page](Project_Photos/ProfilePage.png)`
+
+4. Search Page
+   ![Products Page](Project_Photos/SearchPage.png)`
+
+5. Cart Page
+   ![Products Page](Project_Photos/CartPage.png)`
+
+6. Order Page
+   ![Products Page](Project_Photos/OrderPage.png)`
+
+7. Shipping Page
+   ![Products Page](Project_Photos/ShippingPage.png)`
+
+8. Confirm Order Page
+   ![Products Page](Project_Photos/ConfirmOrderPage.png)`
+
+9. Payment Page
+   ![Products Page](Project_Photos/PaymentPage.png)`
+
+10. Quick Navigation cum Banner Page
+    ![Products Page](Project_Photos/HomepageBanner.png)`
+
 ## How to Run the Project
 
 1. Clone the repository.
