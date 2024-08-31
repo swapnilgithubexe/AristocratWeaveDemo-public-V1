@@ -2,7 +2,7 @@ import "./App.css";
 import { useEffect, useState } from "react"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import store from "./store.js";
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
 import WebFont from "webfontloader";
 import Header from "./component/layout/Header/Header";
 import Footer from "./component/layout/Footer/Footer"
@@ -12,7 +12,7 @@ import Products from "./component/Product/Products.jsx"
 import Search from "./component/Product/Search.jsx"
 import LoginSignUp from "./component/User/LoginSignUp.jsx"
 import { loadUser } from "./action/userAction.js";
-import UserOptions from "./component/layout/Header/UserOptions.jsx"
+// import UserOptions from "./component/layout/Header/UserOptions.jsx"
 import Profile from "./component/User/Profile.jsx"
 import ProtectedRoute from "./component/Route/ProtectedRoute.jsx";
 import UpdateProfile from "./component/User/UpdateProfile.jsx"
@@ -34,7 +34,7 @@ import Dashboard from "./component/Admin/Dashboard.jsx"
 
 
 function App() {
-  const { isAuthenticated, user } = useSelector((state) => state.user);
+  // const { isAuthenticated, user } = useSelector((state) => state.user);
 
   const [stripePromise, setStripePromise] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -67,7 +67,7 @@ function App() {
   return (
     <Router>
       <Header />
-      {isAuthenticated && <UserOptions user={user} />}
+      {/* {isAuthenticated && <UserOptions user={user} />} */}
       <Routes>
         <Route path="/" element={<Home />} />
 
