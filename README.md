@@ -105,6 +105,7 @@ This project is a full-fledged e-commerce application built using the MERN stack
 - dotenv
 
 ## Project Structure
+This folder structure is a monolithic full-stack application that uses MVC architecture in the backend (models, controllers, routes) with a RESTful API layer, while the frontend is organized separately, using React.
 
 `root
 
